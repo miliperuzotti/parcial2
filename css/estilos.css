@@ -22,7 +22,7 @@ body{
 /*menu navegacion*/
 nav ul{
 	background-color: black;
-	border: 0.2rem solid white;
+	border: 0.1rem solid white;
 	list-style: none;
 	padding: 0.8rem;
 	margin: 0rem;
@@ -114,4 +114,13 @@ article {
 }
 .centrar{
 	text-align: center;
+}
+
+form, #tituloForm{
+	background-color: white;
+	margin: 2rem;
+	border: 0.2rem solid skyblue;
+}
+input{
+		border: 0.1rem solid blue;
 }
