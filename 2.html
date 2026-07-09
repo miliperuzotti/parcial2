@@ -3,8 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>Casey Reas:Contenido artistico</title>
+	<!--links-->
+	<link href="css/estilos.css" rel="stylesheet">
+	<!--links google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div id="contenedor">
 	<header>
 		<!--menu navegacion-->
 		<nav>
@@ -21,18 +28,17 @@
 	<!--CONTENIDO-->
 	<main>
 		<!--2 columas-->
-		<section>
-			<h2>Código, sistemas y variación cómo herramientas para la creación artistica</h2>
-			<article>
-				<h3>Sistemas, reglas y variación</h3>
+		<div class="columnas">
+			<article class="grande">
+				<h2>Sistemas, reglas y variación</h2>
 				<p>El trabajo de Casey Reas se fundamenta en la idea de que una obra puede ser entendida como un sistema de reglas. Estas reglas definen las posibles interacciones entre los elementos visuales, permitiendo que la obra se genere a partir de su ejecución.</p>
-				<p>Este enfoque introduce la variación como un elemento central. Cada vez que el sistema se ejecuta, puede producir un resultado diferente, lo que transforma la noción de originalidad y repetición en el arte digital.</p>
+				<p>Este enfoque introduce la variación como un elemento central. Cada vez que el sistema se ejecuta, puede producir un resultado diferente, lo que <em>transforma la noción de originalidad y repetición en el arte digital</em>.</p>
 				<p>Además de su producción artística, ha tenido un rol clave en la difusión del pensamiento computacional dentro del arte contemporáneo. Su enfoque promueve la comprensión del código como un medio expresivo, accesible y profundamente creativo.</p>
-				<h3>El código como sistema visual</h3>
-				<p>El enfoque de Casey Reas se basa en la creación de instrucciones que definen comportamientos visuales. En lugar de diseñar una imagen de forma directa, desarrolla algoritmos que determinan cómo los elementos se relacionan, se mueven y evolucionan en el tiempo. Este método convierte al código en el núcleo del proceso creativo.</p>
+				<h2>El código como sistema visual</h2>
+				<p>El enfoque de Casey Reas se basa en la creación de instrucciones que definen comportamientos visuales. En lugar de diseñar una imagen de forma directa, desarrolla <strong>algoritmos</strong> que determinan cómo los elementos se relacionan, se mueven y evolucionan en el tiempo. Este método convierte al código en el núcleo del proceso creativo.</p>
 				<p>A partir de reglas simples, sus sistemas pueden generar resultados complejos e impredecibles. Esta lógica permite explorar la emergencia, donde patrones y formas surgen de la interacción entre componentes. El resultado es una obra que no está completamente controlada, sino que se desarrolla dentro de un marco definido.</p>
 			</article>
-			<article>
+			<article class="chico">
 				<h3>Obras y conceptos clave</h3>
 				<ul>
 					<li>Software Structures</li>
@@ -42,8 +48,13 @@
 					<li>Arte basado en reglas</li>
 					<li>Visualización algorítmica</li>
 				</ul>
+				<div class="imagenes">
+				<img src="img/reas-1.jpg" alt="obra de Casey Reas" width="175" height="225">
+				<img src="img/reas-2.jpg" alt="obra de Casey Reas" width="175" height="225">
+				<img src="img/reas-3.jpg" alt="obra de Casey Reas" width="175" height="225">
+			</div>
 			</article>
-		</section>
+		</div>
 	</main>
 
 	<!--pie de página-->
@@ -51,5 +62,6 @@
 		<hr>
 		<address>Para contactarse escribir a <a href="mailto:casey@artedigital.com" id="mail">casey@artedigital.com</a></address>
 	</footer>
+    </div>
 </body>
 </html>

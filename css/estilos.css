@@ -1,0 +1,117 @@
+
+#contenedor{
+	width: 100%;
+	max-width: 1200px;
+}
+*{box-sizing: border-box;}
+
+
+body{
+	display: flex;
+	justify-content: center;
+
+	/*imagen de fondo*/
+	background-image: url(../img/fondo.png);
+	background-repeat: repeat;
+	font-size: 1.5rem;
+	padding: 2rem;
+}
+
+
+
+/*menu navegacion*/
+nav ul{
+	background-color: black;
+	border: 0.2rem solid white;
+	list-style: none;
+	padding: 0.8rem;
+	margin: 0rem;
+	text-align: center;
+}
+
+nav li{
+	display: inline-block;
+	margin: 0;
+}
+
+/* links */
+nav a{
+	display: inline-block;
+	padding: 0.2rem 1.2rem;
+	text-decoration: none;
+	border: 0.2rem solid skyblue;
+}
+
+/* normal */
+nav a:link{
+	background-color: white;
+	color: darkblue;
+}
+
+/* visitado */
+nav a:visited {
+	background-color: skyblue;
+	color: darkblue;
+}
+
+/* mouse encima */
+nav a:hover{
+	background-color: white;
+	color: black;
+}
+
+/* click */
+nav a:active{
+	background-color: black;
+	color: white;
+}
+/*fin menu navegacion*/
+
+/*font google*/
+h1, h2, h3, article.chico{
+ font-family: "Arvo", serif;
+}
+
+/*fondo color transparente*/
+h1, main,footer{
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 0.1rem solid white;
+	}
+
+/*color texto que está sobre el fondo*/
+h1, footer{
+	color: white;
+	text-align: center;
+}
+
+/*division 3 columnas-inicio-*/
+.inicio{
+	display: flex;
+	justify-content: center;
+}
+
+article {
+	background-color: white;
+	padding: 1rem;
+	margin: 1rem;
+	width: 50%;
+}
+/*division 2 columnas-pag 2-*/
+.columnas{
+	display: flex;
+}
+.chico{
+	width: 25%;
+}
+.grande{
+	width: 70%;
+}
+/*para centrar las imagenes*/
+.imagenes{
+	text-align: center;
+	display: block;
+	margin: 2rem;
+}
+.centrar{
+	text-align: center;
+}
