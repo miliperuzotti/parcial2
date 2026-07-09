@@ -27,27 +27,31 @@
 	<!--CONTENIDO-->
 	<main>
 		<section>
-			<h2 id="tituloForm">Por favor, complete los campos a continuacion</h2>
+			<h2 class="textoblanco">Siga los pasos mencionados</h2>
+			<p class="textoblanco">Primero indique la cantidad total de instalaciones a producir. Luego cargue los datos de cada instalación y finalmente presione "Calcular resultados".</p>
 			<form action="#" method="post">
 				<fieldset>
 				<label for="cantidad">Ingrese la cantidad de instalaciones a producir</label>
-				<input type="number" name="cantidad" id="cantidad">
+				<input type="number" name="cantidad" id="cantidad" min="1" required>
+				<button type="button" id="btnCantidad"> Confirmar cantidad</button>
 				<label for="nombre">Nombre de la instalación</label>
-				<input type="text" name="nombre" id="nombre">
+				<input type="text" name="nombre" id="nombre" required disabled>
 				</fieldset>
 				<fieldset>
 				<label for="trabajadores">Cantidad de trabajadores necesarios</label>
-				<input type="number" name="trabajadores" id="trabajadores">
+				<input type="number" name="trabajadores" id="trabajadores" min="1" required disabled>
 				<label for="produccion">Dias de produccion estimados</label>
-				<input type="number" name="produccion" id="produccion">
+				<input type="number" name="produccion" id="produccion" min="1" required disabled>
 				<label for="horario">Horas laborales de cada trabajador por día</label>
-				<input type="number" name="horario" id="horario">
+				<input type="number" name="horario" id="horario" min="1" required disabled>
 				<label for="cobro">Valor de cobro del honorario por hora</label>
-				<input type="number" name="cobro" id="cobro">
+				<input type="number" name="cobro" id="cobro" min="1" required disabled>
 				</fieldset>
-				<button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
+				<button type="submit" id="btnAgregar" disabled>Agregar instalación</button>
+                <button type="button" id="btnCalcular" disabled>Calcular resultados</button>
+                <button type="button" id="btnReiniciar" disabled>Reiniciar</button>
 			</form>
+			<div id="salida"></div>
 		</section>
 	</main>
 

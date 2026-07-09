@@ -90,11 +90,11 @@ h1, footer{
 	justify-content: center;
 }
 
-article {
+.inicio article {
 	background-color: white;
 	padding: 1rem;
 	margin: 1rem;
-	width: 50%;
+	flex: 1;
 }
 /*division 2 columnas-pag 2-*/
 .columnas{
@@ -102,9 +102,15 @@ article {
 }
 .chico{
 	width: 25%;
+	background-color: white;
+	padding: 1rem;
+	margin: 1rem;
 }
 .grande{
 	width: 70%;
+	background-color: white;
+	padding: 1rem;
+	margin: 1rem;
 }
 /*para centrar las imagenes*/
 .imagenes{
@@ -116,11 +122,37 @@ article {
 	text-align: center;
 }
 
-form, #tituloForm{
+form{
 	background-color: white;
 	margin: 2rem;
+	margin-right: 10rem;
+	margin-left:10rem ;
 	border: 0.2rem solid skyblue;
+}
+.textoblanco{
+	color: white;
+	text-align: center;
 }
 input{
 		border: 0.1rem solid blue;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+
+label{
+    display:block;
+    margin-top:1rem;
+}
+
+input{
+    width:70%;
+    padding:0.5rem;
+    margin-bottom:1rem;
+}
+
+button{
+    padding:0.7rem 1rem;
+    margin:1rem 0.5rem;
 }
