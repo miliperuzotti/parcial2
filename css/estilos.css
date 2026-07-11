@@ -160,3 +160,94 @@ button{
     color: white;
     margin-left:2rem ;
 }
+
+/*PAGINA 2
+estilo galeria*/
+
+/*utilizo flexbox para layout, color fondo y bordes*/
+#galeria{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+
+    background-color:white;
+    padding:2rem;
+    margin:2rem;
+    border:0.2rem solid skyblue;
+}
+
+/*layout del titulo con propiedades de flexbox items, y estilos*/
+#tituloGaleria{
+	flex-basis:100%;
+    order:-1;
+
+    text-align:center;
+    margin-bottom:3rem;
+    border-bottom:0.2rem solid skyblue;
+    padding-bottom:3rem;
+} 
+
+/*defino estilos de los articulos con la clase obra, o sea de cada obra en la galeria*/
+.obra{
+    width:30%;
+    margin-bottom:2rem;
+    padding:1rem;
+
+    background-color:#f7f7f7;
+    border:0.1rem solid #cccccc;
+
+    text-align:center;
+}
+
+/*defino medidas y borde de cada imagen
+( object-fit es una propiedad para que la imagen mantenga sus proporciones y se adapten al tamaño definido)*/
+.obra img{
+    width: 200px;
+    height:250px;
+    object-fit:cover;
+    border:0.15rem solid black;
+}
+
+/*estilo de titulo de cada obra*/
+.obra h3{
+    font-size:1rem;
+    margin-top:1rem;
+    margin-bottom:0.5rem;
+}
+
+/*estilo de año de cada obra*/
+.obra p{
+    margin:0;
+    font-size:1rem;
+    color:#555;
+}
+
+/*botones galeria*/
+button{
+    background-color:black;
+    color:white;
+
+    border:0.2rem solid skyblue;
+
+    padding:0.8rem 1.5rem;
+    margin:1rem 0.5rem;
+
+    font-size:1rem;
+}
+
+button:hover{
+    background-color:skyblue;
+    color:black;
+}
+
+button:active{
+    transform:scale(0.97);
+}
+
+/*centrar botones*/
+.botones{
+    flex-basis:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:2rem;
+}
