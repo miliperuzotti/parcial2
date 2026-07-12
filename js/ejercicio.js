@@ -66,10 +66,10 @@ function agregarInstalacion(event){
     //validar datos
     if(
     nombre.value == "" ||
-    trabajadores.value == "" ||
-    produccion.value == "" ||
-    horario.value == "" ||
-    cobro.value == ""
+    trabajadores.value <=0 ||
+    produccion.value <=0 ||
+    horario.value <=0 ||
+    cobro.value <=0
     ){
     alert("Debe completar todos los campos");
     return;
