@@ -24,13 +24,14 @@ let btnReiniciar = document.querySelector("#btnReiniciar");
 
 let salida = document.querySelector("#salida");
 
-//eventos
+//evento 1
 
 btnCantidad.addEventListener("click", confirmarCantidad);
 
 function confirmarCantidad(){
 cantidadInstalaciones = Number(cantidad.value);
 
+//validar dato
 if(cantidadInstalaciones <= 0){
         alert("Debe ingresar una cantidad de instalaciones mayor a 0.");
     }
@@ -48,6 +49,8 @@ if(cantidadInstalaciones <= 0){
 }
 }
 
+//evento 2
+
 btnAgregar.addEventListener("click", agregarInstalacion);
 
 function agregarInstalacion(event){
@@ -59,6 +62,18 @@ function agregarInstalacion(event){
     let dias = Number(produccion.value);
     let horas = Number(horario.value);
     let valorHora = Number(cobro.value);
+
+    //validar datos
+    if(
+    nombre.value == "" ||
+    trabajadores.value == "" ||
+    produccion.value == "" ||
+    horario.value == "" ||
+    cobro.value == ""
+    ){
+    alert("Debe completar todos los campos");
+    return;
+}
 
     //enviar los valores ingresados al array
     nombres.push(nombreInstalacion);
@@ -85,13 +100,9 @@ Se cargaron ${contador} instalaciones correctamente.
 </p>
 `;
 }
-//solo para desarrollo BORRAR
-    console.log(nombres);
-    console.log(trabajadoresArray);
-    console.log(diasProduccion);
-    console.log(horasPorDia);
-    console.log(honorarios);
 }
+
+//evento 3
 
 btnCalcular.addEventListener("click", calcularResultados);
 
@@ -105,6 +116,7 @@ let mayorCantidadDias = 0;
 let nombreMayor = "";
 let costoInstalacionMayor = 0;
 
+//para resolver calculos
 //repetitiva para recorrer las instalaciones
  for(let i = 0; i < nombres.length; i++){
 
@@ -123,6 +135,7 @@ let costoInstalacionMayor = 0;
         costoTotalEstudio += costoInstalacionActual;
 
         // buscar la instalación con más días
+        //estructura condicional
         if(diasProduccion[i] > mayorCantidadDias){
 
             mayorCantidadDias = diasProduccion[i];
@@ -131,9 +144,8 @@ let costoInstalacionMayor = 0;
 
         }
     }
-        let porcentaje = Math.round(
-    (costoInstalacionMayor / costoTotalEstudio) * 100
-);
+
+    let porcentaje = Math.round((costoInstalacionMayor / costoTotalEstudio) * 100);
 
     salida.innerHTML = `
         <h3>Resultados</h3>
@@ -164,7 +176,9 @@ let costoInstalacionMayor = 0;
     btnReiniciar.disabled = false;
 }
 
+//evento 4
 btnReiniciar.addEventListener("click", reiniciar);
+
 function reiniciar(){
     location.reload();
 }

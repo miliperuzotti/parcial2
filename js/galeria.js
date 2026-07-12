@@ -35,7 +35,7 @@ let galeria = document.querySelector("#galeria");
 function mostrarGaleria(){
     galeria.innerHTML = "";
 
-     galeria.innerHTML += `<h3 id="tituloGaleria">Obras del artista</h3>`;
+    galeria.innerHTML += `<h3 id="tituloGaleria">Obras del artista</h3>`;
 
     for(let i = 0; i < obras.length; i++){
         galeria.innerHTML += `
@@ -46,6 +46,7 @@ function mostrarGaleria(){
         </article>
         `;
     }
+
     galeria.innerHTML +=`<div class="botones">
         <button id="btnCambiar">Modo galería</button>
         <button id="btnOrden">Invertir recorrido</button>
@@ -58,26 +59,25 @@ function mostrarGaleria(){
     boton.addEventListener("click", cambiarDisenio);
 
     //capturo el boton
-let btnOrden = document.querySelector("#btnOrden");
-
-//al hacer click en el boton se ejecuta la funcion cambiarOrden
-btnOrden.addEventListener("click", cambiarOrden);
+    let btnOrden = document.querySelector("#btnOrden");
+    //al hacer click en el boton se ejecuta la funcion cambiarOrden
+    btnOrden.addEventListener("click", cambiarOrden);
 }
 
 //llamo a la funcion
 mostrarGaleria();
 
- //defino el valor booleano
+//defino el valor booleano
 let cambio = true;
 
 /*creo la funcion para cambiar el modo de galeria*/
 function cambiarDisenio(){
 
 //capturo elementos
-    let imagenes = document.querySelectorAll(".obra img");
-    let tarjetas = document.querySelectorAll(".obra");
-    let titulos = document.querySelectorAll(".obra h3");
-    let fechas = document.querySelectorAll(".obra p");
+let imagenes = document.querySelectorAll(".obra img");
+let tarjetas = document.querySelectorAll(".obra");
+let titulos = document.querySelectorAll(".obra h3");
+let fechas = document.querySelectorAll(".obra p");
 
 //estructura condicional para que el boton cambie de un diseño a otro(tamaño y colores)
     if(cambio == true){

@@ -3,9 +3,10 @@
 	width: 100%;
 	max-width: 1200px;
 }
+
 *{box-sizing: border-box;}
 
-
+/*generales todas*/
 body{
 	display: flex;
 	justify-content: center;
@@ -16,8 +17,6 @@ body{
 	font-size: 1.5rem;
 	padding: 2rem;
 }
-
-
 
 /*menu navegacion*/
 nav ul{
@@ -78,13 +77,15 @@ h1, main,footer{
 	border: 0.1rem solid white;
 	}
 
-/*color texto que está sobre el fondo*/
+/*texto que está sobre el fondo*/
 h1, footer{
 	color: white;
 	text-align: center;
 }
 
-/*division 3 columnas-inicio-*/
+/*PAG 1
+division 3 columnas*/
+
 .inicio{
 	display: flex;
 	justify-content: center;
@@ -96,31 +97,41 @@ h1, footer{
 	margin: 1rem;
 	flex: 1;
 }
-/*division 2 columnas-pag 2-*/
+
+/*PAG 2
+division 2 columnas*/
+
 .columnas{
 	display: flex;
 }
+
 .chico{
-	width: 25%;
+	flex: 1;
 	background-color: white;
 	padding: 1rem;
 	margin: 1rem;
 }
+
 .grande{
-	width: 70%;
+	flex: 3;
 	background-color: white;
 	padding: 1rem;
 	margin: 1rem;
 }
+
 /*para centrar las imagenes*/
 .imagenes{
 	text-align: center;
 	display: block;
 	margin: 2rem;
 }
+
 .centrar{
 	text-align: center;
 }
+
+/*PAG 3
+formulario*/
 
 form{
 	background-color: white;
@@ -129,13 +140,16 @@ form{
 	margin-left:10rem ;
 	border: 0.2rem solid skyblue;
 }
+
 .textoblanco{
 	color: white;
 	text-align: center;
 }
+
 input{
 		border: 0.1rem solid blue;
 }
+
 img{
     max-width:100%;
     height:auto;
@@ -156,6 +170,8 @@ button{
     padding:0.7rem 1rem;
     margin:1rem 0.5rem;
 }
+
+/*texto resultados*/
 #salida{
     color: white;
     margin-left:2rem ;
@@ -265,8 +281,8 @@ datos curiosos*/
     align-items: center;
 
     background-color: whitesmoke;
-    border-left: 5px solid skyblue;
-    border-right: 5px solid skyblue;
+    border-left: 0.3rem solid skyblue;
+    border-right: 0.3rem solid skyblue;
 }
 
 #datosCuriosos h2{

@@ -30,23 +30,34 @@
 			<h2 class="textoblanco">Siga los pasos mencionados</h2>
 			<p class="textoblanco">Primero indique la cantidad total de instalaciones a producir. Luego cargue los datos de cada instalación y finalmente presione "Calcular resultados".</p>
 			<form action="#" method="post">
+				
+				<!--campo 1-->
 				<fieldset>
 				<label for="cantidad">Ingrese la cantidad de instalaciones a producir</label>
 				<input type="number" name="cantidad" id="cantidad" min="1" required>
+
 				<button type="button" id="btnCantidad"> Confirmar cantidad</button>
+
 				<label for="nombre">Nombre de la instalación</label>
 				<input type="text" name="nombre" id="nombre" required disabled>
 				</fieldset>
+
+				<!--campo 2-->
 				<fieldset>
 				<label for="trabajadores">Cantidad de trabajadores necesarios</label>
 				<input type="number" name="trabajadores" id="trabajadores" min="1" required disabled>
+
 				<label for="produccion">Dias de produccion estimados</label>
 				<input type="number" name="produccion" id="produccion" min="1" required disabled>
+
 				<label for="horario">Horas laborales de cada trabajador por día</label>
 				<input type="number" name="horario" id="horario" min="1" required disabled>
+
 				<label for="cobro">Valor de cobro del honorario por hora</label>
 				<input type="number" name="cobro" id="cobro" min="1" required disabled>
 				</fieldset>
+
+				<!--botones finales-->
 				<button type="submit" id="btnAgregar" disabled>Agregar instalación</button>
                 <button type="button" id="btnCalcular" disabled>Calcular resultados</button>
                 <button type="button" id="btnReiniciar" disabled>Reiniciar</button>
@@ -61,6 +72,8 @@
 		<address>Para contactarse escribir a <a href="mailto:casey@artedigital.com" id="mail">casey@artedigital.com</a></address>
 	</footer>
     </div>
+
+    <!--link java-->
     <script src="js/ejercicio.js"></script>
 </body>
 </html>
